@@ -15,7 +15,7 @@ function AiChat({data}) {
                     <FaRobot className="h-6 w-6"/>
                 </span>
                 </IconContext.Provider> 
-                <code className="flex  flex-col relative left-[10rem] text-white w-[50rem]"
+                <pre className="flex  flex-col relative left-[10rem] text-white w-[50rem]"
                 >
                  {code.map((item,index)=>{
                     return(
@@ -27,7 +27,7 @@ function AiChat({data}) {
                     )
                 })}
               
-                </code>
+                </pre>
             </div>
         </div>
     )

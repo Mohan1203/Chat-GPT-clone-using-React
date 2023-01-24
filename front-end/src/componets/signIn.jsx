@@ -12,7 +12,7 @@ function SignIn() {
   const [password, setPassword] = useState("");
   const [error,setError] = useState("")
 
-  document.body.style.backgroundColor = "#16213E";
+  // document.body.style.backgroundColor = "#16213E";
   const submitHandler = async (e) => {
     e.preventDefault();
     const data = {

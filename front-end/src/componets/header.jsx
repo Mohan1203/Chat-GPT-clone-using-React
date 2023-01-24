@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { BsFillChatRightFill, BsSun, BsDiscord, BsFillArrowRightSquareFill } from "react-icons/bs";
+import {  BsSun, BsDiscord, BsFillArrowRightSquareFill } from "react-icons/bs";
 import { FaSignOutAlt } from "react-icons/fa";
 import "../dist/output.css"
 import axios from "axios";
