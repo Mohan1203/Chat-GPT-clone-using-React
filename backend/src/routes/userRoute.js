@@ -74,14 +74,14 @@ router.post("/home",auth,async(req,res)=>{
         
         const {props} = req.body;
         const configuration = new Configuration ({
-            apiKey: process.env.OPENAI_API_KEY || "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"
+            apiKey: process.env.OPENAI_API_KEY || "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"
         });
           const openai = new OpenAIApi(configuration);
           const response = await openai.createCompletion({
               model: "text-davinci-003",
               prompt: `${props}`,
               temperature: 0,
-              max_tokens: 10,
+              max_tokens: 500,
             });
             
             
@@ -89,7 +89,7 @@ router.post("/home",auth,async(req,res)=>{
             await userQuery.save();
             return res.send(userQuery);      
     }catch(error){
-       return  res.status(400).send("Something went wrong")
+       return  res.status(400).send(error)
     }
 })
 
